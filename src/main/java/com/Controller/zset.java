@@ -16,6 +16,9 @@ public class zset {
     @RequestMapping("dozset")
     public  void  dozset(){
         ZSetOperations<String, String> stringStringZSetOperations = stringredisTemplate.opsForZSet();
+        /*方便查看删除这个和最后一个注释
+
+
 //添加
         1.add(K,V,S)：
 //键为K的集合，Smin<=score<=Smax的元素个数
@@ -56,6 +59,6 @@ public class zset {
         13.removeRange(K,start,end)：
 //删除，键为K的集合，Smin<=score<=Smax的元素，返回删除个数
         14.removeRangeByScore(K,Smin,Smax)：
-
+*/
     }
 }
